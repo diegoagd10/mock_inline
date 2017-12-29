@@ -1,0 +1,60 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mRepoTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmock_inline.Repo.connection[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return connection *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:60)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at com.sun.proxy.$Proxy12.isTypeMockable(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:29)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:232)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:226)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.MockitoCore.mock(MockitoCore.java:64)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.Mockito.mock(Mockito.java:1821)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.Mockito.mock(Mockito.java:1734)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.mockito.MockitoSugar.mock(MockitoSugar.scala:73)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalStateException: Failed to load interface org.mockito.plugins.MockMaker implementation declared in IteratorWrapper(empty iterator)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginLoader.loadImpl(PluginLoader.java:94)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:48)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.util.MockUtil.<clinit>(MockUtil.java:24)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:232)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:226)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.MockitoCore.mock(MockitoCore.java:64)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.Mockito.mock(Mockito.java:1821)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: org.mockito.exceptions.base.MockitoInitializationException: Could not initialize inline Byte Buddy mock maker. (This mock maker is not supported on Android.)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mJava               : 1.8[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mJVM vendor name    : Oracle Corporation[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mJVM vendor version : 25.144-b01[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mJVM name           : Java HotSpot(TM) 64-Bit Server VM[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mJVM version        : 1.8.0_144-b01[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mJVM info           : mixed mode[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mOS name            : Windows 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mOS version         : 10.0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:171)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Class.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginLoader.loadImpl(PluginLoader.java:89)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:48)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: java.lang.IllegalStateException: No compatible attachment provider is not available[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:367)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:352)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:320)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at net.bytebuddy.agent.ByteBuddyAgent.install(ByteBuddyAgent.java:306)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<clinit>(InlineByteBuddyMockMaker.java:101)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.reflect.Constructor.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at java.lang.Class.newInstance(Unknown Source)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
